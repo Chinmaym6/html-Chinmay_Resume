@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial, sans-serif';
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #222;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Page Container */
+.page-container {
+    display: flex;
+    background-color: #ffffff;
+    width: 80%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: #e8d9cc;
+    width: 35%;
+    padding: 30px;
+    text-align: center;
+}
+
+.image-container .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    margin-bottom: 20px;
+    border: 3px solid #ccc; /* Optional border */
+}
+
+.profile-card .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-card .designation {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    width: 25px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Content Section */
+.content {
+    padding: 40px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.content p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.content .buttons {
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #222;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.blue-btn {
+    background-color: #0056ff;
+    color: white;
+    border: none;
+}
+
+.white-btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #222;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Skills Section */
+.skills {
+    margin-top: 20px;
+}
+
+.skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.skills li {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #333;
+    position: relative;
+}
+
+.skills li::before {
+    content: '•';
+    color: #0056ff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+</style>
+<body>
+    <!-- Page Container -->
+    <div class="page-container">
+        <!-- Profile Card -->
+        <div class="profile-card">
+            <div class="image-container">
+                <!-- Replace "your-image.jpg" with your image path -->
+                <img src="./WhatsApp Image 2024-12-18 at 14.22.26_436072a6.jpg" alt="Profile Picture" class="profile-image">
+            </div>
+            <h2 class="name">Chinmay M</h2>
+            <p class="designation">CSE Sec-A</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/chinmay-m-253739276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <!-- Right Side Text -->
+        <div class="content">
+            <h1>Hello</h1>
+            <p>Here's who I am & what I do</p>
+            <div class="buttons">
+                <a href="./resume.html" class="btn blue-btn">RESUME</a>
+                <a href="./biodata.html" class="btn white-btn">BIO-DATA</a>
+            </div>
+            <p class="description">
+                I am a student of RVITM College, CSE. I have knowledge in Data Structures and Algorithms (DSA) and Web Development.  
+                I am passionate about solving problems, building efficient solutions, and creating attractive websites.
+            </p>
+            <p></p>
+            <hr>
+            <!-- Skills Section -->
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Data Structures and Algorithms (DSA)</li>
+                    <li>HTML, CSS, and JavaScript</li>
+                    <li>Responsive Web Design</li>
+                    <li>Basic Python Programming</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

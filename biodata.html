@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Data</title>
+    <link rel="stylesheet" href="biodata.css">
+</head>
+<body>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial, sans-serif';
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0056ff;
+    color: white;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: #ffffff;
+    color: #0056ff;
+    border-radius: 5px;
+}
+
+/* Section Styling */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #0056ff;
+    padding-bottom: 5px;
+    color: #0056ff;
+}
+
+/* Cards */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.card ul li strong {
+    color: #222;
+}
+
+/* Footer */
+footer {
+    background-color: #0056ff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+    </style>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>My Bio-Data</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="biodata.html" class="active">Bio-Data</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Personal Details Section -->
+    <section>
+        <h2>Personal Details</h2>
+        <div class="card">
+            <ul>
+                <li><strong>Name:</strong> Chinmay M</li>
+                <li><strong>Birthday:</strong> 12 Oct 2003</li>
+                <li><strong>Nationality:</strong> Indian</li>
+                <li><strong>Email:</strong> chinmaym6166@gmail.com</li>
+            </ul>
+        </div>
+
+        <!-- Languages Section -->
+        <h2>Languages</h2>
+        <div class="card">
+            <ul>
+                <li>English</li>
+                <li>Kannada</li>
+                <li>Hindi</li>
+            </ul>
+        </div>
+
+        <!-- Skills Section -->
+        <h2>Skills</h2>
+        <div class="card">
+            <ul>
+                <li>Data Structures and Algorithms (DSA)</li>
+                <li>HTML, CSS, and JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Basic Python Programming</li>
+                <li>Problem Solving</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Chinmay M</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
